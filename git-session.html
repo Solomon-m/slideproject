@@ -54,11 +54,11 @@
          animation-duration: 1.5s;
          }
          @-webkit-keyframes fade {
-         from {opacity: .4} 
+         from {opacity: .4}
          to {opacity: 1}
          }
          @keyframes fade {
-         from {opacity: .4} 
+         from {opacity: .4}
          to {opacity: 1}
          }
          /* On smaller screens, decrease text size */
@@ -72,8 +72,8 @@
          <div class="mySlides fade">
             <h1>Feature one </h1>
             <ul>
-               <li>Video calling </li>
-               <li>Text message</li>
+               <li>Video caling </li>
+               <li>Text mesage</li>
                <li>Facebook</li>
             </ul>
          </div>
@@ -81,21 +81,27 @@
             <h1>Feature two </h1>
             <ul>
                <li>chat </li>
-               <li>Facebook</li>
-               <li>Messanger</li>
+               <li>Facebooook</li>
             </ul>
          </div>
          <div class="mySlides fade">
             <h1>Feature three </h1>
             <ul>
-               <li>Facebook</li>
+               <li>Facebk</li>
             </ul>
          </div>
-         <div class="mySlides fade">
+         <div class="mySlides fade"> 
             <h1>Feature four </h1>
             <ul>
                <li>Git hub</li>
             </ul>
+         </div>
+         <div class="mySlides fade">
+            <h1>Feature five </h1>
+            <ul>
+               <li>conference call </li>
+               <li>screen sharing</li>
+                </ul>
          </div>
          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
          <a class="next" onclick="plusSlides(1)">&#10095;</a>
@@ -103,24 +109,24 @@
       <script>
          var slideIndex = 1;
          showSlides(slideIndex);
-         
+
          function plusSlides(n) {
            showSlides(slideIndex += n);
          }
-         
+
          function showSlides(n) {
            var i;
            var slides = document.getElementsByClassName("mySlides");
            var dots = document.getElementsByClassName("dot");
-           if (n > slides.length) {slideIndex = 1}    
+           if (n > slides.length) {slideIndex = 1}
            if (n < 1) {slideIndex = slides.length}
            for (i = 0; i < slides.length; i++) {
-               slides[i].style.display = "none";  
+               slides[i].style.display = "none";
            }
            for (i = 0; i < dots.length; i++) {
                dots[i].className = dots[i].className.replace(" active", "");
            }
-           slides[slideIndex-1].style.display = "block";  
+           slides[slideIndex-1].style.display = "block";
          }
       </script>
    </body>
